@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: plus_one
+name: _plus_one
 
 # Short bio or description (displayed in the header)
 description: 随便写点什么东西，总是好的！
@@ -18,15 +18,15 @@ avatar: https://avatars1.githubusercontent.com/u/8295454?v=2&u=11f6e137d4439e854
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble: 
-  email: 
+  email: ywjia@mail.ustc.edu.cn
   facebook: 
   flickr: 
-  github: barryclark/jekyll-now
+  github: i-delta/i-delta.github.io
   instagram: 
   linkedin: 
   pinterest: 
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: jekyllrb
+  twitter: _plus_one
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
 
 # Your disqus shortname, entering this will enable commenting on posts
