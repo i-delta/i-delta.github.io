@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "挫折 "
+title: "挫折     -----纪伯伦"
 published: true
 ---
 
