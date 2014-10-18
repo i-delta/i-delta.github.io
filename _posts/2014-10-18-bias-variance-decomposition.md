@@ -15,5 +15,5 @@ layout: post
   predictor for predicting the new input data .
   
   **variance**: 
-  the error due to variance are taken as variability of a model prediction for given a data the variance is how much the predictions for a given point vary between different.
+  the error due to variance are taken as variability of a model prediction for given a data the variance is how much the predictions for a given point vary between different realizations of the model.
 
