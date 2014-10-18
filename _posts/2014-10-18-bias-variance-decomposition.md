@@ -4,8 +4,6 @@ published: true
 
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
-###
-
 Bias and Variance
  
    In statistics and machine learning, the bias and variance are two sources of errors.
