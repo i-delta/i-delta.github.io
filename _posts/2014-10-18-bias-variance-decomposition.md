@@ -5,9 +5,9 @@ layout: post
 
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
-**Bias and Variance**
+1. **Bias and Variance**
  
-   In statistics and machine learning, the bias and variance are two sources of errors.  
+  In statistics and machine learning, the bias and variance are two sources of errors.  
    
   **bias** : 
   the error due to bias are taken as the difference between our prediction value of our 
@@ -15,5 +15,5 @@ layout: post
   predictor for predicting the new input data .
   
   **variance**: 
-  the error due to variance are taken as variability of a model prediction for given a data
-  set point.
+  the error due to variance are taken as variability of a model prediction for given a data the variance is how much the predictions for a given point vary between different.
+
