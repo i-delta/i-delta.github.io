@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-### About
+
 A student focus on Machine Learning, Data Mining and Linux.
 
 ### More Information
