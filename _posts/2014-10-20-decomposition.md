@@ -1,5 +1,6 @@
 ---
 published: true
+title: Bias-Variance Decomposition
 layout: post
 ---
 
@@ -7,7 +8,9 @@ layout: post
   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 #偏置-方差分解
+
 ##1. 偏置 与 方差
+
 所谓偏置与方差是统计学和机器学习中两种类型错误的来源：
   
 

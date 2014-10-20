@@ -53,4 +53,3 @@ published: true
 
 我们将时危险的。
 
-note: this is a poem!
