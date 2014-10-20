@@ -3,7 +3,7 @@ published: true
 layout: post
 ---
 
-script type="text/javascript"
+<script type="text/javascript"
   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 #偏置-方差分解
