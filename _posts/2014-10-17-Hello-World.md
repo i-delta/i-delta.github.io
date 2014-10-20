@@ -52,3 +52,5 @@ published: true
 我们将怀着同样的欲望站立于阳光之下，
 
 我们将时危险的。
+
+note: this is a poem!
