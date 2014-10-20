@@ -1,7 +1,7 @@
 ----------
-author: ywjia
-layout: true
-published: false
+
+layout: post
+published: true
 
 ----------
 script type="text/javascript"
