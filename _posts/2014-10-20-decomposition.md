@@ -38,8 +38,9 @@ $$E[(y-\hat{f}(x))^{2}  = E[(f(x)- E(\hat{f}(x)))^2] + E[(\hat{f}(x) - E(\hat{f}
 
 为了简单，现另$f = f(x), { }\hat{f} = \hat{f}(x)$, 证明如下：
 
-
+$$
 \begin{displaymath}
 
 
 \end{displaymath}
+$$
