@@ -20,7 +20,7 @@ layout: post
 理想情况下，我们会选择一个即能对训练数据有很好的预测，又能对新的数据有很好的泛化能力。即同时使最小化偏置和方差，但这是很难同时做到的。高方差（High-vairance）往往导致模型过拟合(overfitting), 也就是模型能很好的拟合训练集，但是对于测试集却不能很好的拟合。而低偏置（low-bias）的学习算法往往是一个简单的模型，以至于简单到不能fit训练集，也就是underfit。**Bias-Vairance tradeoff** 就是解决这个问题的一种方法。它将一个学习算法的expected generalization error解为三部分之和： 偏置， 方差 和由于噪声引起的错误 。
 
 ##2. 偏置-方差 分解
-假设有训练集$\{(x_1, y_1), (x_2, y_2), ..., (x_n, y_n)\}$， 假设$y_i = f(x_i) + \epsilon$,其中$\epsilon$ 是数据噪声，其均值为0,方差为$\delta^{2}$. 我们目标是从训练集中学习一个$\hat{y} = \hat{f} (x)$, 该函数近似于数据的真实函数$y = f(x)$。
+假设有训练集$\{(x_1, y_1), (x_2, y_2), ..., (x_n, y_n)\}\sqsubseteq$， 假设$y_i = f(x_i) + \epsilon$,其中$\epsilon$ 是数据噪声，其均值为0,方差为$\delta^{2}$. 我们目标是从训练集中学习一个$\hat{y} = \hat{f} (x)$, 该函数近似于数据的真实函数$y = f(x)$。
 用最小化平方差均值[（Mean Squared  Error）](http://en.wikipedia.org/wiki/Mean_squared_error)的方法求得目标函数, 即 最小化  $E[(y-\hat{f}(x))^{2}] $。由于数据$y$包含了噪声， 所以我们得到的目标函数总会有不可避免的错误。因此，方差均值可以分解为如下： 
 
 
@@ -31,11 +31,11 @@ $$E[(y-\hat{f}(x))^{2}  = E[(f(x)- E(\hat{f}(x)))^2] + E[(\hat{f}(x) - E(\hat{f}
 
 为了简单，现另$f = f(x), { }\hat{f} = \hat{f}(x)$, 证明如下：
 
-
+$$
 \begin{array}{c|c}
   1 & 2 \\
   \hline
   3 & 4
  \end{array
- 
+ $$
  
