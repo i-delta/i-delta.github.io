@@ -13,6 +13,9 @@ MathJax.Hub.Config({
   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
+
+＜script type="text/x-mathjax-config"＞ MathJax.Hub.Config({ TeX: {equationNumbers: { autoNumber: ["AMS"], useLabelIds: true}}, "HTML-CSS": {linebreaks: {automatic: true}}, SVG: {linebreaks: {automatic: true}} }); ＜/script＞
+
 ##1. 偏置 与 方差
 
 所谓偏置与方差是统计学和机器学习中两种类型错误的来源：
@@ -34,3 +37,9 @@ $$E[(y-\hat{f}(x))^{2}  = E[(f(x)- E(\hat{f}(x)))^2] + E[(\hat{f}(x) - E(\hat{f}
  = Bias(\hat{f}(x))^2 + Var(\hat{f}(x)) + Var(\epsilon) \\ = Bias(\hat{f}(x))^2 + Var(\hat{f}(x)) + \delta^2   $$ .
 
 为了简单，现另$f = f(x), { }\hat{f} = \hat{f}(x)$, 证明如下：
+
+
+\begin{displaymath}
+
+
+\end{displaymath}
