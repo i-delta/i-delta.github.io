@@ -14,7 +14,6 @@ MathJax.Hub.Config({
 </script>
 
 
-＜script type="text/x-mathjax-config"＞ MathJax.Hub.Config({ TeX: {equationNumbers: { autoNumber: ["AMS"], useLabelIds: true}}, "HTML-CSS": {linebreaks: {automatic: true}}, SVG: {linebreaks: {automatic: true}} }); ＜/script＞
 
 ##1. 偏置 与 方差
 
