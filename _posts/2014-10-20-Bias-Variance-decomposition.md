@@ -38,9 +38,28 @@ $$E[(y-\hat{f}(x))^{2}  = E[(f(x)- E(\hat{f}(x)))^2] + E[(\hat{f}(x) - E(\hat{f}
 
 为了简单，现另$f = f(x), { }\hat{f} = \hat{f}(x)$, 证明如下：
 
-$$
-\begin{displaymath}
+$$ E[(y-\hat{f})^{2}] = E[(y - f + f - \hat{f})^{2}] \\ = E[(y-f)^{2}] + E[(f - \hat{f})^{2}] + 2E[(y - f)(f - \hat{f})]$$ 
+
+而 $$E[(y - f)(f - \hat{f})] =  E[yf - y\hat{f} -f^{2} + f \hat{f}] \\ = E[yf] - E[f^2] + E[f\hat{f}] - E[y\hat{f}] 
+$$ 因为 $E[yf] = E[(f + \epsilon)f] = E[f^2 ] + E[\epsilon f] = f^2,  
+E[f^2] = f^2 $
+
+$E[y\hat{f}] = E[(f + \epsilon)\hat{f}] = E[f\hat{f}]$
+
+故 $E[(y - f)(f - \hat{f})] = 0 $. 所以$E[(y-\hat{f})^{2}] = E[(y - f + f - \hat{f})^{2}] \\ = E[(y-f)^{2}] + E[(f - \hat{f})^{2}] = E[\epsilon ^{2}] + E[(f - \hat{f})^{2}] $ 
+
+而
+$$E[(f - \hat{f})^{2}]  = E[(f - E(\hat{f}) + E(\hat{f} )- \hat{f})^2]\\
+= E[(f - E(\hat{f}))^2] + E[\hat{f} - E(\hat{f})^2] + 2E[(f-E(\hat{f}))(E(\hat{f})-\hat{f}  )] $$
+
+上式最后一项为0.因为$$E[(f-E(\hat{f}))(E(\hat{f})-\hat{f}  )]   =  E[fE[\hat{f}]] - E[f\hat{f}]  - E[(E[\hat{f}])^2] + E[\hat{f}E[\hat{f}]] = 0$$
+
+综上：$$E[(y-\hat{f})^{2}] = E[\epsilon ^2] + E[(f - E(\hat{f}))^2] + E[\hat{f} - E(\hat{f})^2] \\ = \delta ^2 + (Bias(\hat{f}))^2  + Var(\hat{f})$$
 
 
-\end{displaymath}
-$$
+Q.E.D
+
+Reference: 
+
+1. [wiki Bias-Variance tradeoff.](http://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff)
+2. [Understand Viarance and Bias.](http://scott.fortmann-roe.com/docs/BiasVariance.html)
