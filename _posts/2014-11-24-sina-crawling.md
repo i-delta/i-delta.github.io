@@ -20,6 +20,7 @@ layout: post
 >通俗点讲就是，你问A， “我可以读你的用户信息吗？”， A说”可以”，拿着用户的授权，你再向新浪的Authorization 服务器申请Access Token（获取资源的令牌）。有了令牌你就可以访问用户资源了。 讲了这么多好像还是不具体，下面给点具体的代码（当然只是测试代码）：
 
 <pre><code>
+
 from sdk.weibo import APIClient
 import urllib, os, sys
 import webbrowser
@@ -62,8 +63,6 @@ headers = {
 req = urllib2.Request(url = AUTH_URL, data=urllib.urlencode(postdata), headers=headers)
 try:
     resp = urllib2.urlopen(req)
-   # print resp.read()
-   # print resp.info()
     print 'the callback_url is :%s' % resp.geturl()
     code = resp.geturl()[-32:]
     print 'code is : %s' % code
@@ -106,5 +105,7 @@ while len(friendId) > 0 and c < 10:
      #   db.write(screen_name+':'+'followers:'+str(i.followers_count)+'friends :'+str(i.friends_count) +'status:'+str(i.statuses_count) )
     
 db.close()
+
+
 
 </code></pre>
