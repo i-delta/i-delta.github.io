@@ -77,26 +77,20 @@ access_token = r.access_token
 expires_in = r.expires_in
 print 'access_token is: %s' % access_token
 print 'expiers_in is : %s' % expires_in
-
 client.set_access_token(access_token, expires_in)
-
 uid=5285991999
-
 friendId = []
 ul = client.statuses.public_timeline.get(uid = 5285991999)
 friendId.append(uid)
-
 db = open('friend.txt', 'w')
 c = 0
 while len(friendId) > 0 and c < 10:
-     
     c = c+1
     userId = friendId.pop()
-  
     friendList = client.statuses.friends.get(id=userId)
     for r in friendList.user:
         friendId.append(r.id)
-  #i  content = client.statuses.home_timeline.get(sinceid = 1,count = 100)
+    content = client.statuses.home_timeline.get(sinceid = 1,count = 100)
    # count = client.users.counts.get(uids=userId)
    # for i in count:
     #    userstatus = client.users.show.get(uid = i.id)
@@ -105,7 +99,5 @@ while len(friendId) > 0 and c < 10:
      #   db.write(screen_name+':'+'followers:'+str(i.followers_count)+'friends :'+str(i.friends_count) +'status:'+str(i.statuses_count) )
     
 db.close()
-
-
 
 </code></pre>
