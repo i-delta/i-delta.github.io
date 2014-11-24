@@ -18,8 +18,8 @@ layout: post
 >新浪微博授权流程：![enter image description here](http://www.sinaimg.cn/blog/developer/wiki/oAuth2_01.gif)
 >其中client是指你开发的应用，resouce owner 是指你要获取的资源拥有者，比如你要读取微博用户A 的用户信息，那么A就是resource owner， Authorization Server 和 Resouce Server 都是新浪的服务器。
 >通俗点讲就是，你问A， “我可以读你的用户信息吗？”， A说”可以”，拿着用户的授权，你再向新浪的Authorization 服务器申请Access Token（获取资源的令牌）。有了令牌你就可以访问用户资源了。 讲了这么多好像还是不具体，下面给点具体的代码（当然只是测试代码）：
->`
 
+<pre><code>
 from sdk.weibo import APIClient
 import urllib, os, sys
 import webbrowser
@@ -107,4 +107,4 @@ while len(friendId) > 0 and c < 10:
     
 db.close()
 
-print 'end'
+</code></pre>
